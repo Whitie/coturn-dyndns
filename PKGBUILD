@@ -14,7 +14,14 @@ source=('check_external_ip.timer' 'check_external_ip.service'
         'check_external_ip.py' 'external_ip_changed.path'
         'external_ip_changed.service' 'coturn-dyndns.service'
         'LICENSE' 'README.md')
-sha256sums=('SKIP')
+md5sums=('8c7e4bbe9436bce8a036a751b2a3d1c5'
+         'bffe92fb134d7e196ca30e965d84310f'
+         '09a094854f986d1fa6212beeb8b1509c'
+         'd23d5c0dc8f225bcbfbd23ef691b2697'
+         '0dea87624e40064872efb980656e4479'
+         '43809a1c03a76442d99b26f88bbf1af8'
+         '683a216c6bcd595b7b4bbc281d5d37b1'
+         '5f0255c6723d8064d82375edef62f32e')
 
 package() {
   install -Dm 755 check_external_ip.py "$pkgdir"/usr/bin/check_external_ip.py
