@@ -5,7 +5,7 @@ Requires=check_external_ip.timer
 After=check_external_ip.timer
 
 [Path]
-PathModified=/var/cache/check_external_ip/ip
+PathModified=/tmp/external_ip
 
 [Install]
 WantedBy=multi-user.target

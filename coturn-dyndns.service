@@ -6,7 +6,7 @@ After=network.target
 [Service]
 User=turnserver
 Type=forking
-EnvironmentFile=/var/cache/check_external_ip/ip
+EnvironmentFile=/tmp/external_ip
 ExecStart=/usr/bin/turnserver -c /etc/turnserver/turnserver.conf -o -v --external-ip $EXTERNAL_IP
 
 [Install]

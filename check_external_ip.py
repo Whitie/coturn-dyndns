@@ -65,8 +65,8 @@ def write_new_ip(ip, filepath):
     os.rename(tmp, filepath)
 
 
-def main(statefile='ip'):
-    cache_dir = os.environ.get('CACHE_DIRECTORY', '/var/cache')
+def main(statefile='external_ip'):
+    cache_dir = '/tmp'
     filepath = os.path.join(cache_dir, statefile)
     old_ip = get_ip_from_file(filepath)
     if old_ip:
