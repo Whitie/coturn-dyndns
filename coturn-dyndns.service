@@ -1,0 +1,13 @@
+# /usr/lib/systemd/system/coturn-dyndns.service
+[Unit]
+Description=STUN and TURN relay server for VoIP and WebRTC over DynDNS
+After=network.target
+
+[Service]
+User=turnserver
+Type=forking
+EnvironmentFile=/var/cache/check_external_ip/ip
+ExecStart=/usr/bin/turnserver -c /etc/turnserver/turnserver.conf -o -v --external-ip $EXTERNAL_IP
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+# /usr/lib/systemd/system/external_ip_changed.service
+[Unit]
+Description=Restarts coturn-dyndns.service if external IP has changed
+ConditionPathExists=/var/cache/check_external_ip/ip
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl restart coturn-dyndns.service
+
+[Install]
+WantedBy=multi-user.target

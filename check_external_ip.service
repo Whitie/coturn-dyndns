@@ -1,0 +1,10 @@
+# /usr/lib/systemd/system/check_external_ip.service
+[Unit]
+Description=Checks the external IP via script check_external_ip.py
+
+[Service]
+Type=oneshot
+# /var/cache/check_external_ip
+CacheDirectory=check_external_ip
+CacheDirectoryMode=755
+ExecStart=/usr/bin/check_external_ip.py ip

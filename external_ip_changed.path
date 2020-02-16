@@ -1,0 +1,11 @@
+# /usr/lib/systemd/system/external_ip_changed.path
+[Unit]
+Description=Trigger service if the IP changed
+Requires=check_external_ip.timer
+After=check_external_ip.timer
+
+[Path]
+PathModified=/var/cache/check_external_ip/ip
+
+[Install]
+WantedBy=multi-user.target
