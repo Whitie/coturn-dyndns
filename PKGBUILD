@@ -2,7 +2,7 @@
 # Idea from: https://gitlab.com/r4dh4l/tachyon/-/blob/master/turn-server.md
 
 pkgname=coturn-dyndns-git
-pkgver=0.1
+pkgver=0.2
 pkgrel=1
 pkgdesc='Restart coturn if external IP changes'
 arch=('any')
