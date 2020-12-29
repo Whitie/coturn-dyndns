@@ -1,2 +1,2 @@
 # coturn-dyndns
-Systemd units and timers to restart coturn always with the right external IP.
+Systemd units and timers to (re)start coturn always with the right external IP.

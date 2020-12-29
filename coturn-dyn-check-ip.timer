@@ -1,0 +1,12 @@
+# /usr/lib/systemd/system/coturn-dyn-check-ip.timer
+[Unit]
+Description=Activates the external IP checker service every 5 minutes
+Wants=network-online.target
+After=network-online.target
+
+[Timer]
+OnBootSec=1min
+OnCalendar=*:0/5
+
+[Install]
+WantedBy=timers.target

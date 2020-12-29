@@ -1,7 +1,0 @@
-# /usr/lib/systemd/system/check_external_ip.service
-[Unit]
-Description=Checks the external IP via script check_external_ip.py
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/check_external_ip.py external_ip

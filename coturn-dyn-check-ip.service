@@ -1,0 +1,7 @@
+# /usr/lib/systemd/system/coturn-dyn-check-ip.service
+[Unit]
+Description=Checks the external IP and restarts coturn if changed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/coturn-dyn-check-ip.sh
