@@ -8,7 +8,7 @@ pkgdesc='Restart coturn if external IP changes'
 arch=('any')
 url='https://github.com/whitie/coturn-dyndns'
 license=('MIT')
-depends=('coturn' 'curl')
+depends=('coturn' 'python')
 source=('coturn-dyn-check-ip.timer' 'coturn-dyn-check-ip.service' 'coturn-dyn.conf'
         'coturn-dyn-check-ip.py' 'LICENSE' 'README.md')
 md5sums=('6e2e946a06d4fe14f8bd521859bf3783'
