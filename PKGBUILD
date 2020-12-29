@@ -12,7 +12,7 @@ depends=('coturn' 'curl')
 source=('coturn-dyn-check-ip.timer' 'coturn-dyn-check-ip.service' 'coturn-dyn.conf'
         'coturn-dyn-check-ip.py' 'LICENSE' 'README.md')
 md5sums=('6e2e946a06d4fe14f8bd521859bf3783'
-         '634b5fa58a02a42b61012ea3ecc6be5b'
+         '5b7d0ee1c2b7275a8fbf3f8a96ee4a6f'
          'eb14e0cf4447e4222607ca8cbc5c525d'
          '1825899e21d86c84b1d1a2e164ab3a86'
          '683a216c6bcd595b7b4bbc281d5d37b1'
@@ -24,3 +24,4 @@ package() {
   install -Dm 644 coturn-dyn-check-ip.service "$pkgdir"/usr/lib/systemd/system/coturn-dyn-check-ip.service
   install -Dm 644 coturn-dyn.conf "$pkgdir"/etc/coturn-dyn.conf
 }
+

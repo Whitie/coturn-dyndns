@@ -4,4 +4,4 @@ Description=Checks the external IP and restarts coturn if changed
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/coturn-dyn-check-ip.sh
+ExecStart=/usr/bin/python /usr/bin/coturn-dyn-check-ip.py
